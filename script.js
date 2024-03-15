@@ -8,7 +8,7 @@ function Car(make, model) {
 }
 
 function SportsCar(make, model, topSpeed) {
-	super(make,model);
+	Car.call(this, make, model);
 	this.topSpeed = topSpeed;
 }
 SportsCar.prototype = object.create(Car.prototype);
